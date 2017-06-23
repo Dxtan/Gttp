@@ -1,0 +1,27 @@
+{
+    "name": "gttp/gttp",
+    "description": "A super simple HTTP client that seems fine.",
+    "type": "library",
+    "require": {
+        "php":">=5.6.0",
+	    "guzzlehttp/guzzle": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.7.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dxtan",
+            "email": "dxtan@icloud.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/Gttp.php"
+        ]
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
