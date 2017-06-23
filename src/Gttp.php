@@ -1,6 +1,6 @@
 <?php
 
-namespace Zttp;
+namespace Gttp;
 
 class Gttp
 {
@@ -170,7 +170,7 @@ class GttpResponse
     function __call($method, $args)
     {
         return $this->response->{$method}(...$args);
-    }
+    }LICENSE.md
 }
 
 function tap($value, $callback) {
