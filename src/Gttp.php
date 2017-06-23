@@ -102,7 +102,7 @@ class GttpRequest
 
     function send($method, $url, $options)
     {
-        return new ZttpResponse((new \GuzzleHttp\Client)->request($method, $url, $this->mergeOptions([
+        return new GttpResponse((new \GuzzleHttp\Client)->request($method, $url, $this->mergeOptions([
             'query' => $this->parseQueryParams($url),
         ], $options)));
     }
